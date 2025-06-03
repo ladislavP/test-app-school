@@ -63,7 +63,7 @@ export class API {
       };
     } else {
       throw {
-        message: 'Invalid username or password',
+        message: 'Nesprávne meno alebo heslo',
         code: 'AUTH_FAILED'
       } as ApiError;
     }
@@ -74,7 +74,7 @@ export class API {
     // Check authentication
     if (!this.token) {
       throw {
-        message: 'Authentication required',
+        message: 'Musíte sa prihlásiť',
         code: 'AUTH_REQUIRED'
       } as ApiError;
     }
@@ -101,7 +101,7 @@ export class API {
     // Check authentication
     if (!this.token) {
       throw {
-        message: 'Authentication required',
+        message: 'Musíte sa prihlásiť',
         code: 'AUTH_REQUIRED'
       } as ApiError;
     }
@@ -114,7 +114,7 @@ export class API {
     
     if (!school) {
       throw {
-        message: 'School not found',
+        message: 'Škola nenájdená',
         code: 'NOT_FOUND'
       } as ApiError;
     }
@@ -127,7 +127,7 @@ export class API {
     // Check authentication
     if (!this.token) {
       throw {
-        message: 'Authentication required',
+        message: 'Musíte sa prihlásiť',
         code: 'AUTH_REQUIRED'
       } as ApiError;
     }
@@ -138,7 +138,7 @@ export class API {
     // Check if school exists
     if (!SCHOOLS.some(school => school.id === schoolId)) {
       throw {
-        message: 'School not found',
+        message: 'Škola nenájdená',
         code: 'NOT_FOUND'
       } as ApiError;
     }
@@ -152,7 +152,7 @@ export class API {
     // Check authentication
     if (!this.token) {
       throw {
-        message: 'Authentication required',
+        message: 'Musíte sa prihlásiť',
         code: 'AUTH_REQUIRED'
       } as ApiError;
     }
@@ -167,13 +167,13 @@ export class API {
       
       return {
         success: true,
-        message: 'QR code scanned successfully',
+        message: 'QR kód naskenovaný úspešne',
         deviceId: deviceId
       };
     } else {
       return {
         success: false,
-        message: 'Invalid QR code'
+        message: 'Neexistujúci QR kód'
       };
     }
   }
