@@ -236,8 +236,8 @@ const AdvancedQRScanner: React.FC<AdvancedQRScannerProps> = ({
                   </p>
                   <p className="text-white/80 text-sm mb-4">
                     {cameraPermission === 'denied' 
-                      ? 'Please allow camera access to scan QR codes'
-                      : 'Tap the button below to start scanning'
+                      ? 'Prosím povoľte prístup ku kamere'
+                      : 'Kliknite na tlačidlo nižšie a spustite skenovanie'
                     }
                   </p>
                   <Button 
@@ -245,7 +245,7 @@ const AdvancedQRScanner: React.FC<AdvancedQRScannerProps> = ({
                     disabled={isLoading}
                     className="bg-white text-gray-900 hover:bg-white/90"
                   >
-                    {isLoading ? 'Starting...' : cameraPermission === 'denied' ? 'Enable Camera' : 'Start Scanning'}
+                    {isLoading ? 'Starting...' : cameraPermission === 'denied' ? 'Povoľte prístup ku kamere' : 'Začať skenovať'}
                   </Button>
                 </div>
               </div>
@@ -263,7 +263,7 @@ const AdvancedQRScanner: React.FC<AdvancedQRScannerProps> = ({
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               <div className="flex-1">
-                <h4 className="text-white font-semibold mb-1">Scanner Error</h4>
+                <h4 className="text-white font-semibold mb-1">Chyba skenovania</h4>
                 <p className="text-white/80 text-sm">{error}</p>
               </div>
             </div>
@@ -288,7 +288,7 @@ const AdvancedQRScanner: React.FC<AdvancedQRScannerProps> = ({
         {allowManualInput && (
           <div className="space-y-3">
             <div className="text-center">
-              <p className="text-white/80 text-sm">Can&apos;t scan? Enter the code manually</p>
+              <p className="text-white/80 text-sm">Nedarí sa skenovať? Zadajte kód manuálne.</p>
             </div>
             <Input
               placeholder={placeholder}
@@ -307,7 +307,7 @@ const AdvancedQRScanner: React.FC<AdvancedQRScannerProps> = ({
               onClick={handleManualSubmit}
               disabled={!manualCode.trim()}
             >
-              Submit Code
+              Potvrdiť
             </Button>
           </div>
         )}
