@@ -130,7 +130,7 @@ html, body {
 
 /* Modern input styling */
 .input-modern {
-  @apply w-full px-4 py-3 rounded-xl border-2 border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/20 focus:outline-none transition-all duration-300 placeholder-gray-400 dark:placeholder-gray-500;
+  @apply w-full text-gray-700 py-3 rounded-xl border-2 border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/20 focus:outline-none transition-all duration-300 placeholder-gray-400 dark:placeholder-gray-500;
 }
 
 .input-modern:focus {

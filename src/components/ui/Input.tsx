@@ -49,7 +49,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
               getPadding(),
               error && 'border-red-500 focus:border-red-500 focus:ring-red-500/20',
               'animate-fade-in',
-              className
+              className,
             )}
             ref={ref}
             {...props}
