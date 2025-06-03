@@ -236,13 +236,13 @@ export default function QRScanPage({ params }: QRScanPageProps) {
                   {/* Instructions */}
                   <Card variant="glass" className="border-white/20">
                     <CardContent className="p-6 lg:p-8">
-                      <h3 className="text-white font-semibold mb-4 lg:mb-6 flex items-center text-lg lg:text-xl">
+                      <h3 className="text-gray font-semibold mb-4 lg:mb-6 flex items-center text-lg lg:text-xl">
                         <svg className="w-5 h-5 lg:w-6 lg:h-6 mr-2 lg:mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                         {t('qr.instructions')}
                       </h3>
-                      <ul className="text-white/80 text-sm lg:text-base space-y-3 lg:space-y-4">
+                      <ul className="text-gray/80 text-sm lg:text-base space-y-3 lg:space-y-4">
                         <li className="flex items-start space-x-3">
                           <span className="w-2 h-2 bg-white/60 rounded-full mt-2 flex-shrink-0"></span>
                           <span>{t('qr.instruction1')}</span>
@@ -266,13 +266,13 @@ export default function QRScanPage({ params }: QRScanPageProps) {
                   {/* Tips for Desktop Users */}
                   <Card variant="glass" className="border-white/20 hidden lg:block">
                     <CardContent className="p-8">
-                      <h3 className="text-white font-semibold mb-6 flex items-center text-xl">
+                      <h3 className="text-gray font-semibold mb-6 flex items-center text-xl">
                         <svg className="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                         </svg>
                         Tipy pre skenovanie
                       </h3>
-                      <ul className="text-white/80 text-base space-y-4">
+                      <ul className="text-gray/80 text-base space-y-4">
                         <li className="flex items-start space-x-3">
                           <span className="w-2 h-2 bg-amber-400 rounded-full mt-2 flex-shrink-0"></span>
                           <span>Uistite sa, že máte dostatočné osvetlenie</span>
@@ -296,7 +296,7 @@ export default function QRScanPage({ params }: QRScanPageProps) {
                   {/* Quick Actions for Desktop */}
                   <Card variant="glass" className="border-white/20 hidden lg:block">
                     <CardContent className="p-8">
-                      <h3 className="text-white font-semibold mb-6 flex items-center text-xl">
+                      <h3 className="text-gray font-semibold mb-6 flex items-center text-xl">
                         <svg className="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                         </svg>
