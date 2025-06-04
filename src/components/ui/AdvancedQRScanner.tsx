@@ -280,7 +280,7 @@ const AdvancedQRScanner: React.FC<AdvancedQRScannerProps> = ({
             className="w-full text-white border-white/30 hover:bg-white/10"
             onClick={stopScanning}
           >
-            Stop Scanning
+            Zastaviť skenovanie
           </Button>
         )}
 

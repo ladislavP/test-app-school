@@ -102,7 +102,7 @@ const QRScanner: React.FC<QRScannerProps> = ({
                 </div>
                 <div className="mt-4 text-center">
                   <Button variant="outline" onClick={stopScanning} className="text-white border-white/30">
-                    Stop Scanner
+                    Zastaviť skener
                   </Button>
                 </div>
               </div>
@@ -115,7 +115,7 @@ const QRScanner: React.FC<QRScannerProps> = ({
                 </div>
                 <p className="text-white/80 mb-4">Ready to scan QR codes</p>
                 <Button onClick={startScanning} className="bg-white text-gray-900 hover:bg-white/90">
-                  Start Camera
+                  Zapnúť kameru
                 </Button>
               </div>
             )}
@@ -137,7 +137,7 @@ const QRScanner: React.FC<QRScannerProps> = ({
             <div className="space-y-3">
               <p className="text-white/80 text-sm text-center">
                 {hasPermission === false ? 'Camera not available. ' : ''}
-                Enter code manually:
+                Zadajte kód ručne:
               </p>
               <Input
                 placeholder="Enter device code..."
@@ -151,7 +151,7 @@ const QRScanner: React.FC<QRScannerProps> = ({
                 disabled={!manualCode.trim()}
                 className="w-full bg-white text-gray-900 hover:bg-white/90"
               >
-                Submit Code
+                Potvrdiť
               </Button>
             </div>
           </CardContent>
