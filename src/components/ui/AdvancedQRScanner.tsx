@@ -216,7 +216,7 @@ const AdvancedQRScanner: React.FC<AdvancedQRScannerProps> = ({
               <div className="absolute bottom-4 left-4 right-4">
                 <div className="bg-black/70 backdrop-blur-sm rounded-lg p-3 text-center">
                   <p className="text-white text-sm font-medium">
-                    {scanResult ? '✅ Code detected!' : '📷 Scanning for QR code...'}
+                    {scanResult ? '✅ Kód nájdený!' : '📷 Skenujem...'}
                   </p>
                 </div>
               </div>
@@ -245,7 +245,7 @@ const AdvancedQRScanner: React.FC<AdvancedQRScannerProps> = ({
                     disabled={isLoading}
                     className="bg-white text-gray-900 hover:bg-white/90"
                   >
-                    {isLoading ? 'Starting...' : cameraPermission === 'denied' ? 'Povoľte prístup ku kamere' : 'Začať skenovať'}
+                    {isLoading ? 'Načítavam...' : cameraPermission === 'denied' ? 'Povoľte prístup ku kamere' : 'Začať skenovať'}
                   </Button>
                 </div>
               </div>
